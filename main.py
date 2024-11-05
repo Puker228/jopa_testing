@@ -13,8 +13,14 @@ def exampleFunction( arg1,arg2 ): # Пробелы вокруг аргумент
     for i in range(10):
         print(i)
 
+    Project = {
+        'fefe': 228,
+        'fefef': 123
+    }
+
     with open("test.txt", "w") as f:
         f.write("Hello") # Нет проверки закрытия файла
 
+
 # Вызов функции
-exampleFunction(1,2)
+exampleFunction(1, 2)
