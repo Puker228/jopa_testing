@@ -1,16 +1,17 @@
-# This is a sample Python script.
+import os, sys # Импорт модулей в одной строке - плохая практика
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+def exampleFunction( arg1,arg2 ): # Пробелы вокруг аргументов и неправильный стиль именования
+    unused_var = 42 # Неиспользуемая переменная
 
+    if arg1 > arg2: print("Arg1 is greater!") # Однострочный if без отступов
+    else:
+        print ('Arg2 is greater or equal!') # Лишний пробел после print
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+    for i in range(0, 10): # range(0, 10) можно заменить на range(10)
+     print("Number:",i) # Отсутствует отступ
 
+    with open("test.txt", "w") as f:
+        f.write("Hello") # Нет проверки закрытия файла
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Вызов функции
+exampleFunction(1,2)
