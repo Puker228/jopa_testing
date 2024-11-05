@@ -10,6 +10,9 @@ def exampleFunction( arg1,arg2 ): # Пробелы вокруг аргумент
     for i in range(0, 10): # range(0, 10) можно заменить на range(10)
      print("Number:",i) # Отсутствует отступ
 
+    for i in range(10):
+        print(i)
+
     with open("test.txt", "w") as f:
         f.write("Hello") # Нет проверки закрытия файла
 
